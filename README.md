@@ -36,7 +36,7 @@ Requirement Analysis is arguably the most critical phase of the SDLC. Its import
 ## Key Activities in Requirement Analysis.
 These key steps ensure that the captured needs accurately reflect the project's goals, are achievable, and are understood by all parties before development begins. 
 
-## 1. Requirement Gathering
+### 1. Requirement Gathering
 This is often considered the initial **"boots on the ground"** phase. It's the broad process of collecting all relevant information about what the system should do from various sources.
 
 **What it is:**  
@@ -56,7 +56,7 @@ Think of it as a journalist gathering facts for a story—interviewing witnesses
 
 ---
 
-## 2. Requirement Elicitation
+### 2. Requirement Elicitation
 This is a more nuanced and sophisticated subset of gathering. Requirements are often hidden, unstated, or assumed and need to be **"drawn out"** through careful techniques.
 
 **What it is:**  
@@ -80,7 +80,7 @@ A therapist doesn’t just record a patient’s statements; they elicit deeper m
 
 ---
 
-## 3. Requirement Documentation
+### 3. Requirement Documentation
 This is the process of formally recording the requirements in a **clear, consistent, structured, and unambiguous** manner. The output becomes the single source of truth for the project.
 
 **What it is:**  
@@ -100,7 +100,7 @@ An architect takes ideas from the client (gathering/elicitation) and creates **b
 
 ---
 
-## 4. Requirement Analysis and Modeling
+### 4. Requirement Analysis and Modeling
 This is the core **"sense-making"** activity. It involves refining, prioritizing, and modeling requirements for better understanding.
 
 **What it is:**  
@@ -123,7 +123,7 @@ A detective analyzes gathered evidence—looking for connections, inconsistencie
 
 ---
 
-## 5. Requirement Validation
+### 5. Requirement Validation
 This is the **quality check** to ensure requirements reflect stakeholders' intentions before development begins.
 
 **What it is:**  
