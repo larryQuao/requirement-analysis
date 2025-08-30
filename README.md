@@ -16,7 +16,7 @@ Non-Functional Requirements: Unlike functional requirements, non-functional requ
 Example: A non-functional requirement for the same banking system might be: “The application should be able to handle 1,000 transactions per minute without performance issues.”
 Both functional and non-functional requirements are vital for ensuring that the software not only fulfills its intended tasks but also performs efficiently and meets user expectations. Properly defining these requirements upfront helps guide the development process, leading to a more successful project outcome.
 
-## Importance of Requirment Analysis
+## Why is Requirement Analysis Important?
 Requirement Analysis is arguably the most critical phase of the SDLC. Its importance cannot be overstated, as the success or failure of a project often hinges on how well this stage is executed.
 1. **Forms the Foundation for the Entire Project**
   The requirements document (like the SRS) is the blueprint for the entire project. It guides the work of designers, developers, testers, and project managers. A solid foundation leads to a stable structure; a weak one guarantees problems down the line.
