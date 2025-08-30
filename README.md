@@ -146,9 +146,9 @@ Before construction begins, the architect walks the client through the blueprint
 ## Types of Requirements
 Below are types of requirements:
 
-# Functional vs Non-Functional Requirements
+### Functional vs Non-Functional Requirements
 
-## 1. Functional Requirements (The "What")
+### 1. Functional Requirements (The "What")
 Functional requirements describe the **specific behaviors, functions, and interactions** of the system—what the system must do.  
 They can be tested and verified (e.g., *“If I do X, the system should do Y”*).
 
@@ -181,7 +181,7 @@ They can be tested and verified (e.g., *“If I do X, the system should do Y”*
 
 ---
 
-## 2. Non-Functional Requirements (The "How Well")
+### 2. Non-Functional Requirements (The "How Well")
 Non-functional requirements describe the **quality attributes** of the system—the criteria that judge its operation rather than specific behaviors.  
 They are often **constraints** on functional requirements and are critical for user satisfaction.
 
@@ -214,7 +214,7 @@ They are often **constraints** on functional requirements and are critical for u
 
 ---
 
-## 3. Summary Table
+### 3. Summary Table
 
 | Feature       | Functional Requirement (The What)                        | Non-Functional Requirement (The How Well)                     |
 |---------------|----------------------------------------------------------|---------------------------------------------------------------|
