@@ -142,3 +142,86 @@ Accuracy and agreement.
 Before construction begins, the architect walks the client through the blueprints (validation). The client confirms, *“Yes, this is the house I want.”* This prevents costly changes later.
 
 ---
+
+## Types of Requirements
+Below are types of requirements:
+
+# Functional vs Non-Functional Requirements
+
+## 1. Functional Requirements (The "What")
+Functional requirements describe the **specific behaviors, functions, and interactions** of the system—what the system must do.  
+They can be tested and verified (e.g., *“If I do X, the system should do Y”*).
+
+### Examples for an Airbnb-like System
+
+#### **User Management**
+- The system shall allow a new user to register an account using their email address.  
+- The system shall allow a user to log in using their email and password or via social media (Google, Facebook).  
+- The system shall allow a user to view and edit their personal profile information.  
+
+#### **Listing Management**
+- The system shall allow a host to create a new property listing with details (title, description, price, location, amenities, photos).  
+- The system shall allow a host to update the availability calendar for their listing.  
+- The system shall allow a guest to browse and search for listings using filters (location, dates, price, number of guests, amenities).  
+
+#### **Booking & Reservation System**
+- The system shall allow a guest to send a booking request to a host for a specific date range.  
+- The system shall allow a host to accept or decline a booking request.  
+- Upon host acceptance, the system shall process the guest’s payment and confirm the booking.  
+- The system shall send email notifications to both guest and host at each booking stage (request, confirmation, reminder).  
+
+#### **Payment Processing**
+- The system shall integrate with a payment gateway (e.g., Stripe, PayPal) to securely process credit card transactions.  
+- The system shall hold the guest’s payment until **24 hours after check-in** before releasing it to the host.  
+
+#### **Review & Rating System**
+- The system shall allow a guest to submit a review and rating for a host and property after their stay.  
+- The system shall allow a host to submit a review and rating for a guest after their stay.  
+- The system shall display the average rating and reviews on the host’s profile and listing page.  
+
+---
+
+## 2. Non-Functional Requirements (The "How Well")
+Non-functional requirements describe the **quality attributes** of the system—the criteria that judge its operation rather than specific behaviors.  
+They are often **constraints** on functional requirements and are critical for user satisfaction.
+
+### Examples for an Airbnb-like System
+
+#### **Performance**
+- The system shall load search results for listings within **2 seconds** under normal load.  
+- Payment transactions must be completed in **less than 5 seconds**.  
+
+#### **Scalability**
+- The system shall handle a **50% increase** in user traffic during peak holiday seasons without performance degradation.  
+- The database must scale to support **10 million property listings**.  
+
+#### **Availability & Reliability**
+- The system shall be available **99.9% of the time (uptime)**.  
+- The system shall have a **disaster recovery plan** to restore service within 1 hour of a major outage.  
+
+#### **Security**
+- The system shall encrypt all sensitive user data (passwords, payments) **in transit (TLS 1.2+) and at rest**.  
+- The system shall undergo **regular third-party security penetration testing**.  
+- User authentication must be required to access any personal or financial data.  
+
+#### **Usability**
+- The interface shall be intuitive enough for a new user to complete a booking within **5 minutes without training**.  
+- The website shall comply with **WCAG 2.1 AA accessibility guidelines** for users with disabilities.  
+
+#### **Compatibility**
+- The web app shall be fully functional on the latest versions of **Chrome, Firefox, Safari, and Edge**.  
+- The mobile experience shall be responsive and functional on **iOS and Android** devices.  
+
+---
+
+## 3. Summary Table
+
+| Feature       | Functional Requirement (The What)                        | Non-Functional Requirement (The How Well)                     |
+|---------------|----------------------------------------------------------|---------------------------------------------------------------|
+| **Search**    | The system must allow users to search for listings.       | Search results must load in under **2 seconds**.              |
+| **Payment**   | The system must process a credit card payment.            | The payment must be processed **securely and in < 5 seconds**.|
+| **Login**     | The system must allow a user to log in.                   | Login must be available **99.9% uptime** and resist brute-force attacks. |
+| **Photo Upload** | A host must be able to upload photos for their listing. | The system must **compress images** to ensure fast mobile loading. |
+
+---
+
