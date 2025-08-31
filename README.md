@@ -280,3 +280,47 @@ Below is an example Use Case Diagram for a booking management system.
 ![Use Case Diagram For A Booking Management System](./alx-booking-uc.png)
 
 ---
+
+### Acceptance Criteria
+
+#### What is Acceptance Criteria?
+
+Acceptance Criteria (AC) are a set of specific, measurable, and testable conditions that a software product must satisfy to be accepted by a user, customer, or other stakeholder. They define the "done" for a requirement, user story, or use case.
+
+They serve as a contract between the stakeholders and the developement team.
+
+  - For the stakeholder, they answer: "How will I know this feature is working correctly?"
+  - For the developer, they answer: "What exactly do I need to build?"
+  - For the tester, they answer: "What do I need to verify?"
+
+### The Importance of Acceptance Criteria in Requirement Analysis
+
+Acceptance Criteria are not an afterthought; they are a fundamental part of the requirement analysis process. Here’s why they are so critical:
+
+  1. **Create a Shared Understanding and Prevent Ambiguity**
+      A requirement like "The user must be able to search for properties" is vague. Acceptance Criteria force clarity:
+      - Given I am on the search page,
+      - When I enter a location and dates and click "Search",
+      - Then I see a list of properties available for those dates in that location.
+      - And the list displays the property name, photo, price, and average rating.
+      This eliminates assumptions and ensures everyone—business analysts, developers, testers, and product owners—has the exact same understanding of what "done" means.
+  
+  2. **Define the Boundaries and Scope of a Requirement**
+      AC explicitly state what is in and out of scope for a specific feature. This is the primary defense against scope creep at the micro-level.
+      - **Example:** For a login feature, AC might specify:
+        - The absence of an AC like "The system must send a password reset email after an account is locked" explicitly leaves that functionality for a future user story, preventing developers from building it unexpectedly.
+        - The system must lock an account after 5 failed login attempts.
+
+  3. **Serve as the Foundation for Testing**
+      Acceptance Criteria are the direct input for creating test cases. In fact, well-written AC can almost be copied and pasted into a test management tool. This ensures that testing is aligned with business expectations from the very beginning.
+
+  4. **Streamline the Development Process**
+      Clear AC help developers in several ways:
+        - Focus: They know precisely what to code, reducing wasted effort on undefined or assumed behavior.
+
+        - Design Aid: Understanding the expected outcomes helps in making better technical design decisions.
+
+        - "Done" Definition: They provide a clear checklist for the developer to mark a task as complete before it even goes to QA.
+
+  5. **Reduce Rework and Project Risk**
+      By catching misunderstandings and ambiguities before a single line of code is written, AC prevent the costly process of building the wrong thing, having it rejected by the stakeholder, and then having to redo it. This saves significant time, money, and effort.
