@@ -225,3 +225,58 @@ They are often **constraints** on functional requirements and are critical for u
 
 ---
 
+## Use Case Diagrams
+
+### What are Use Case Diagrams?
+A Use Case Diagram is a visual representation, a type of Unified Modeling Language (UML) diagram, that summarizes the interactions between actors and a system to achieve specific goals.
+
+It provides a high-level, bird's-eye view of the system's functionality from an end-user's perspective. It's not about the how (implementation details), but about the what (what functionality the system offers to its users).
+
+### Core Components of a Use Case Diagram:
+
+1. System: Represented by a rectangle (also called the system boundary). All the use cases live inside this box, and the actors live outside. The system could be the entire application (e.g., "Airbnb Booking System") or a specific module (e.g., "Payment Module").
+
+2. Use Case: Represented by an oval. Each oval represents a distinct goal or a specific unit of functionality that the system provides. It is always named with a verb-phrase that describes the goal (e.g., "Book a Property," "Write a Review").
+
+3. Actor: Represented by a stick figure. An actor is anyone or anything that interacts with the system from the outside to achieve a goal. Crucially, an actor is a role, not a specific person.
+    - **Primary Actors:** Initiate the interaction with the system (e.g., `Guest`, `Host`).
+    - **Supporting Actors:** Provide a service to the system (e.g., `Payment Gateway`, `Email Service`).
+
+4. **Relationships:** Represented by lines and arrows.
+    - Association: A simple line connecting an actor to a use case. It shows which actors are involved with which use cases.
+
+    - **«include»:** A directed dashed line (with an arrowhead) from Use Case A to Use Case B. It signifies that the behavior of Use Case B is always included as part of Use Case A. It's like calling a subroutine.
+      - *Example:* The use case `Book a Property` «include»s `Process Payment`. You cannot complete a booking without processing a payment.
+  
+      - **«extend»:** A directed dashed line (with an arrowhead) from Use Case B to Use Case A. It signifies that Use Case B may optionally extend the behavior of Use Case A under certain conditions.
+      - *Example:* The use case Apply Discount Coupon «extend»s Book a Property. Applying a coupon is an optional step that enhances the booking process, but the booking can be completed without it.
+
+### Importance of Use Case Diagrams in Requirement Analysis
+
+Use Case Diagrams are not just pretty pictures; they are powerful communication and analysis tools that play a vital role in the requirement analysis phase.
+
+1. **Bridge the Communication Gap**
+
+    They provide a simple, visual language that both technical stakeholders (developers, architects) and **non-technical stakeholders** (clients, end-users, business managers) can understand. This facilitates productive discussions and ensures everyone has a shared understanding of the system's scope and functionality.
+
+2. **Define the Scope of the System**
+
+    The system boundary box makes it explicitly clear what functionality is **inside** the system (the use cases) and which entities are **outside** (the actors). This is the first and most effective tool for preventing **scope creep**, as any new feature request must be evaluated against this diagram.
+
+3. **Identify Actors and Their Goals**
+
+    The process of creating the diagram forces the analyst to think from the user's perspective. It answers the fundamental question: "Who uses the system and what do they need to accomplish?" This helps ensure no key user role or essential functionality is overlooked.
+
+4. **Provide a Structural Overview for Elaboration**
+
+    A Use Case Diagram serves as an excellent table of contents for more detailed requirements. Each use case in the diagram can be elaborated into a detailed textual description (a full Use Case Specification) that includes preconditions, postconditions, main flow, alternative flows, and exceptions. This creates a clear hierarchy from high-level goals to detailed system behavior.
+
+5. **Serve as a Basis for Testing**
+
+    Each use case represents a significant piece of functionality that will need to be tested. The diagram helps QA teams identify all the key user interactions and ensures that test cases are created to verify that each goal can be successfully achieved. The relationships (include/extend) also help in understanding complex test scenarios.
+
+Below is an example Use Case Diagram for a booking management system.
+
+![Use Case Diagram For A Booking Management System](./alx-booking-uc.png)
+
+---
